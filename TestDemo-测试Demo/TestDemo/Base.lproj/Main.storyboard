@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2x-Sb-Q5h">
+                                <rect key="frame" x="127" y="144" width="160" height="50"/>
+                                <color key="backgroundColor" red="0.87843137250000003" green="0.32549019610000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="7sz-1O-M4l"/>
+                                    <constraint firstAttribute="height" constant="50" id="KNI-wd-uAg"/>
+                                </constraints>
+                                <state key="normal" title="启动上报"/>
+                                <connections>
+                                    <action selector="StartLaunchEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g2M-dL-Mdl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R47-ze-s6f">
+                                <rect key="frame" x="127" y="244" width="160" height="50"/>
+                                <color key="backgroundColor" red="0.87843137250000003" green="0.32549019610000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="3dg-ca-mFc"/>
+                                    <constraint firstAttribute="height" constant="50" id="QT7-Bc-GgH"/>
+                                </constraints>
+                                <state key="normal" title="注册上报"/>
+                                <connections>
+                                    <action selector="startRegisterEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pzd-pr-mGD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOC-Rw-Oap">
+                                <rect key="frame" x="127" y="381.5" width="160" height="50"/>
+                                <color key="backgroundColor" red="0.87843137250000003" green="0.32549019610000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="4kF-dr-PlV"/>
+                                    <constraint firstAttribute="height" constant="50" id="f6d-o4-OUA"/>
+                                </constraints>
+                                <state key="normal" title="付费上报"/>
+                                <connections>
+                                    <action selector="startPayevent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YZ2-AJ-1Sr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="付费金额" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4t-ed-kgZ">
+                                <rect key="frame" x="127" y="344" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="6688" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x2e-bw-H4R">
+                                <rect key="frame" x="205" y="337.5" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="8r0-Dm-ksX"/>
+                                    <constraint firstAttribute="width" constant="100" id="zfk-8O-9F6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设备信息上报SDK测试" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="STq-KI-hkq">
+                                <rect key="frame" x="120" y="76" width="174" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mOC-Rw-Oap" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5jr-mg-KDl"/>
+                            <constraint firstItem="p2x-Sb-Q5h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="9I8-HE-TpZ"/>
+                            <constraint firstItem="STq-KI-hkq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OuX-wB-nse"/>
+                            <constraint firstItem="STq-KI-hkq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="Q48-rQ-z7J"/>
+                            <constraint firstItem="F4t-ed-kgZ" firstAttribute="top" secondItem="R47-ze-s6f" secondAttribute="bottom" constant="50" id="Woq-FA-btL"/>
+                            <constraint firstItem="x2e-bw-H4R" firstAttribute="leading" secondItem="F4t-ed-kgZ" secondAttribute="trailing" constant="8" id="XIJ-9l-cM4"/>
+                            <constraint firstItem="F4t-ed-kgZ" firstAttribute="leading" secondItem="R47-ze-s6f" secondAttribute="leading" id="bAv-6i-Heq"/>
+                            <constraint firstItem="p2x-Sb-Q5h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dPD-EQ-zS1"/>
+                            <constraint firstItem="mOC-Rw-Oap" firstAttribute="top" secondItem="x2e-bw-H4R" secondAttribute="bottom" constant="10" id="g2O-SC-hVK"/>
+                            <constraint firstItem="R47-ze-s6f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iDt-SQ-whV"/>
+                            <constraint firstItem="x2e-bw-H4R" firstAttribute="centerY" secondItem="F4t-ed-kgZ" secondAttribute="centerY" id="rBk-m4-Cbs"/>
+                            <constraint firstItem="R47-ze-s6f" firstAttribute="top" secondItem="p2x-Sb-Q5h" secondAttribute="bottom" constant="50" id="vey-RU-2cN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="payTextField" destination="x2e-bw-H4R" id="LuN-8Q-TsT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="49.553571428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
