@@ -15,8 +15,8 @@
 		8A16912E25E7559D00245E7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A16912D25E7559D00245E7A /* main.m */; };
 		BD4C1C4D263FB7E30038457C /* SVProgressHUD in Resources */ = {isa = PBXBuildFile; fileRef = BD4C1C4C263FB7E30038457C /* SVProgressHUD */; };
 		BD4C1C52263FB7F10038457C /* AFNetworking in Resources */ = {isa = PBXBuildFile; fileRef = BD4C1C51263FB7F10038457C /* AFNetworking */; };
-		BD4C1C5C263FB9440038457C /* LionsuSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD4C1C5B263FB9440038457C /* LionsuSDK.a */; };
 		BD5D7F4A263FD53A008DBD07 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BD5D7F49263FD53A008DBD07 /* SVProgressHUD.bundle */; };
+		BDCA2CEE264415F300CD2D35 /* LionsuSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD4C1C5B263FB9440038457C /* LionsuSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +55,8 @@
 		BD4C1C5B263FB9440038457C /* LionsuSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = LionsuSDK.a; path = "Lionsu-SDK/LionsuSDK.a"; sourceTree = "<group>"; };
 		BD4C1C60263FBA560038457C /* libSVProgressHUD.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSVProgressHUD.a; path = SVProgressHUD/libSVProgressHUD.a; sourceTree = "<group>"; };
 		BD5D7F49263FD53A008DBD07 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		BDCA2CE12644156200CD2D35 /* LionsuSDK-Simulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "LionsuSDK-Simulator.a"; path = "Lionsu-SDK/LionsuSDK-Simulator.a"; sourceTree = "<group>"; };
+		BDCA2CE92644159200CD2D35 /* libSVProgressHUD-Simulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libSVProgressHUD-Simulator.a"; path = "SVProgressHUD/libSVProgressHUD-Simulator.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD4C1C5C263FB9440038457C /* LionsuSDK.a in Frameworks */,
+				BDCA2CEE264415F300CD2D35 /* LionsuSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +127,8 @@
 		AE89E71F54AF883064DD638E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BDCA2CE92644159200CD2D35 /* libSVProgressHUD-Simulator.a */,
+				BDCA2CE12644156200CD2D35 /* LionsuSDK-Simulator.a */,
 				BD4C1C60263FBA560038457C /* libSVProgressHUD.a */,
 				BD4C1C5B263FB9440038457C /* LionsuSDK.a */,
 			);
@@ -436,7 +440,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VF8XM5X8U6;
+				DEVELOPMENT_TEAM = J2ARJGMVRX;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TestDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -469,7 +473,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VF8XM5X8U6;
+				DEVELOPMENT_TEAM = J2ARJGMVRX;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TestDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
