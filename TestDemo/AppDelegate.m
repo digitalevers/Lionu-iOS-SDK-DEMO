@@ -6,7 +6,7 @@
 //
 
 #import "AppDelegate.h"
-#import "../Lionsu-SDK/LionsuSDK.h"
+#import "../Lionu-SDK/LionuSDK.h"
 #import "ViewController.h"
 @interface AppDelegate ()
 
@@ -25,7 +25,7 @@
     [self.window makeKeyAndVisible];
     
     //SDK初始化
-    [[LionsuDeviceInfoSDK shareInstance] initSDKWithHostUrl:@"http://121.89.204.35" APPID:@"666888"];
+    [[LionsuDeviceInfoSDK shareInstance] initSDKWithHostUrl:@"https://api.digitalevers.com" APPID:@"54"];
     //配置SDK是否打印上报参数
     [LionsuDeviceInfoSDK shareInstance].configModel.isLog = YES;
     
