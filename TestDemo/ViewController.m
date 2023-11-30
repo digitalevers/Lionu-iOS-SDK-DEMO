@@ -6,7 +6,7 @@
 //
 
 #import "ViewController.h"
-#import "../Lionsu-SDK/LionsuSDK.h"
+#import "../Lionu-SDK/LionuSDK.h"
 #import "../AFNetworking/AFNetworking.h"
 #import "../SVProgressHUD/SVProgressHUD.h"
 @interface ViewController ()

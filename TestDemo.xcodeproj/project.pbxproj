@@ -16,7 +16,7 @@
 		BD4C1C4D263FB7E30038457C /* SVProgressHUD in Resources */ = {isa = PBXBuildFile; fileRef = BD4C1C4C263FB7E30038457C /* SVProgressHUD */; };
 		BD4C1C52263FB7F10038457C /* AFNetworking in Resources */ = {isa = PBXBuildFile; fileRef = BD4C1C51263FB7F10038457C /* AFNetworking */; };
 		BD5D7F4A263FD53A008DBD07 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BD5D7F49263FD53A008DBD07 /* SVProgressHUD.bundle */; };
-		BDCA2CEE264415F300CD2D35 /* LionsuSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD4C1C5B263FB9440038457C /* LionsuSDK.a */; };
+		BDFF96392B176B5500F2AD51 /* LionuSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDFF96382B176B5500F2AD51 /* LionuSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,12 +51,13 @@
 		8A16913E25E7559E00245E7A /* TestDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD4C1C4C263FB7E30038457C /* SVProgressHUD */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SVProgressHUD; sourceTree = "<group>"; };
 		BD4C1C51263FB7F10038457C /* AFNetworking */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AFNetworking; sourceTree = "<group>"; };
-		BD4C1C56263FB82D0038457C /* Lionsu-SDK */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Lionsu-SDK"; sourceTree = "<group>"; };
 		BD4C1C5B263FB9440038457C /* LionsuSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = LionsuSDK.a; path = "Lionsu-SDK/LionsuSDK.a"; sourceTree = "<group>"; };
 		BD4C1C60263FBA560038457C /* libSVProgressHUD.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSVProgressHUD.a; path = SVProgressHUD/libSVProgressHUD.a; sourceTree = "<group>"; };
 		BD5D7F49263FD53A008DBD07 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
 		BDCA2CE12644156200CD2D35 /* LionsuSDK-Simulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "LionsuSDK-Simulator.a"; path = "Lionsu-SDK/LionsuSDK-Simulator.a"; sourceTree = "<group>"; };
 		BDCA2CE92644159200CD2D35 /* libSVProgressHUD-Simulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libSVProgressHUD-Simulator.a"; path = "SVProgressHUD/libSVProgressHUD-Simulator.a"; sourceTree = "<group>"; };
+		BDFF96362B172C6900F2AD51 /* LionuSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = LionuSDK.a; path = "Lionsu-SDK/LionuSDK.a"; sourceTree = "<group>"; };
+		BDFF96382B176B5500F2AD51 /* LionuSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = LionuSDK.a; path = "Lionu-SDK/LionuSDK.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDCA2CEE264415F300CD2D35 /* LionsuSDK.a in Frameworks */,
+				BDFF96392B176B5500F2AD51 /* LionuSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,7 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				BD5D7F49263FD53A008DBD07 /* SVProgressHUD.bundle */,
-				BD4C1C56263FB82D0038457C /* Lionsu-SDK */,
 				BD4C1C51263FB7F10038457C /* AFNetworking */,
 				BD4C1C4C263FB7E30038457C /* SVProgressHUD */,
 				8A16911A25E7559900245E7A /* TestDemo */,
@@ -127,6 +127,8 @@
 		AE89E71F54AF883064DD638E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BDFF96362B172C6900F2AD51 /* LionuSDK.a */,
+				BDFF96382B176B5500F2AD51 /* LionuSDK.a */,
 				BDCA2CE92644159200CD2D35 /* libSVProgressHUD-Simulator.a */,
 				BDCA2CE12644156200CD2D35 /* LionsuSDK-Simulator.a */,
 				BD4C1C60263FBA560038457C /* libSVProgressHUD.a */,
@@ -452,6 +454,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Lionsu-SDK",
 					"$(PROJECT_DIR)/SVProgressHUD",
+					"$(PROJECT_DIR)/Lionu-SDK",
 				);
 				MARKETING_VERSION = 2.0;
 				OTHER_LDFLAGS = (
@@ -485,6 +488,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Lionsu-SDK",
 					"$(PROJECT_DIR)/SVProgressHUD",
+					"$(PROJECT_DIR)/Lionu-SDK",
 				);
 				MARKETING_VERSION = 2.0;
 				OTHER_LDFLAGS = (
@@ -494,7 +498,7 @@
 					"-framework",
 					"\"QuartzCore\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.CH.TestDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitalevers.TestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
