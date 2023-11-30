@@ -26,7 +26,7 @@
 /**启动上报*/
 - (IBAction)StartLaunchEvent:(id)sender {
     //启动上报
-    [[LionsuDeviceInfoSDK shareInstance] startLaunchEvent];
+    [[LionuDeviceInfoSDK shareInstance] startLaunchEvent];
     
     [SVProgressHUD showSuccessWithStatus:@"启动上报完成"];
     [SVProgressHUD dismissWithDelay:1];
@@ -36,7 +36,7 @@
 /**注册上报*/
 - (IBAction)startRegisterEvent:(id)sender {
     //注册上报
-    [[LionsuDeviceInfoSDK shareInstance] startRegisterEvent];
+    [[LionuDeviceInfoSDK shareInstance] startRegisterEvent];
     
     [SVProgressHUD showSuccessWithStatus:@"注册上报完成"];
     [SVProgressHUD dismissWithDelay:1];
@@ -47,7 +47,7 @@
 /**付费上报*/
 - (IBAction)startPayevent:(id)sender {
     //付费上报
-    [[LionsuDeviceInfoSDK shareInstance] startPayEventWithMoney:self.payTextField.text];
+    [[LionuDeviceInfoSDK shareInstance] startPayEventWithMoney:self.payTextField.text];
     
     [SVProgressHUD showSuccessWithStatus:@"付费上报完成"];
     [SVProgressHUD dismissWithDelay:1];

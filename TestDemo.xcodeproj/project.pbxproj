@@ -16,7 +16,7 @@
 		BD4C1C4D263FB7E30038457C /* SVProgressHUD in Resources */ = {isa = PBXBuildFile; fileRef = BD4C1C4C263FB7E30038457C /* SVProgressHUD */; };
 		BD4C1C52263FB7F10038457C /* AFNetworking in Resources */ = {isa = PBXBuildFile; fileRef = BD4C1C51263FB7F10038457C /* AFNetworking */; };
 		BD5D7F4A263FD53A008DBD07 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BD5D7F49263FD53A008DBD07 /* SVProgressHUD.bundle */; };
-		BDFF96392B176B5500F2AD51 /* LionuSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDFF96382B176B5500F2AD51 /* LionuSDK.a */; };
+		BDBC98612B1833CD0083D00A /* LionuSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDBC98602B1833CD0083D00A /* LionuSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,13 +51,10 @@
 		8A16913E25E7559E00245E7A /* TestDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD4C1C4C263FB7E30038457C /* SVProgressHUD */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SVProgressHUD; sourceTree = "<group>"; };
 		BD4C1C51263FB7F10038457C /* AFNetworking */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AFNetworking; sourceTree = "<group>"; };
-		BD4C1C5B263FB9440038457C /* LionsuSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = LionsuSDK.a; path = "Lionsu-SDK/LionsuSDK.a"; sourceTree = "<group>"; };
 		BD4C1C60263FBA560038457C /* libSVProgressHUD.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSVProgressHUD.a; path = SVProgressHUD/libSVProgressHUD.a; sourceTree = "<group>"; };
 		BD5D7F49263FD53A008DBD07 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
-		BDCA2CE12644156200CD2D35 /* LionsuSDK-Simulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "LionsuSDK-Simulator.a"; path = "Lionsu-SDK/LionsuSDK-Simulator.a"; sourceTree = "<group>"; };
+		BDBC98602B1833CD0083D00A /* LionuSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = LionuSDK.a; path = "Lionu-SDK/LionuSDK.a"; sourceTree = "<group>"; };
 		BDCA2CE92644159200CD2D35 /* libSVProgressHUD-Simulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libSVProgressHUD-Simulator.a"; path = "SVProgressHUD/libSVProgressHUD-Simulator.a"; sourceTree = "<group>"; };
-		BDFF96362B172C6900F2AD51 /* LionuSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = LionuSDK.a; path = "Lionsu-SDK/LionuSDK.a"; sourceTree = "<group>"; };
-		BDFF96382B176B5500F2AD51 /* LionuSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = LionuSDK.a; path = "Lionu-SDK/LionuSDK.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDFF96392B176B5500F2AD51 /* LionuSDK.a in Frameworks */,
+				BDBC98612B1833CD0083D00A /* LionuSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,12 +124,9 @@
 		AE89E71F54AF883064DD638E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BDFF96362B172C6900F2AD51 /* LionuSDK.a */,
-				BDFF96382B176B5500F2AD51 /* LionuSDK.a */,
+				BDBC98602B1833CD0083D00A /* LionuSDK.a */,
 				BDCA2CE92644159200CD2D35 /* libSVProgressHUD-Simulator.a */,
-				BDCA2CE12644156200CD2D35 /* LionsuSDK-Simulator.a */,
 				BD4C1C60263FBA560038457C /* libSVProgressHUD.a */,
-				BD4C1C5B263FB9440038457C /* LionsuSDK.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -199,7 +193,7 @@
 		8A16911025E7559900245E7A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					8A16911725E7559900245E7A = {
 						CreatedOnToolsVersion = 12.4;
@@ -445,14 +439,13 @@
 				DEVELOPMENT_TEAM = J2ARJGMVRX;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TestDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Lionsu-SDK",
 					"$(PROJECT_DIR)/SVProgressHUD",
 					"$(PROJECT_DIR)/Lionu-SDK",
 				);
@@ -479,14 +472,13 @@
 				DEVELOPMENT_TEAM = J2ARJGMVRX;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TestDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Lionsu-SDK",
 					"$(PROJECT_DIR)/SVProgressHUD",
 					"$(PROJECT_DIR)/Lionu-SDK",
 				);

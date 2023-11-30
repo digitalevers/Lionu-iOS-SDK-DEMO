@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 #import "ConfigModel.h"
 
-@interface LionsuDeviceInfoSDK : NSObject
+@interface LionuDeviceInfoSDK : NSObject
 @property (nonatomic,strong) ConfigModel *configModel;
 
 
