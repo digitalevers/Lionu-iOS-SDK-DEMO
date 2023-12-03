@@ -25,7 +25,7 @@
     [self.window makeKeyAndVisible];
     
     //SDK初始化
-    [[LionuDeviceInfoSDK shareInstance] initSDKWithHostUrl:@"https://api.digitalevers.com" APPID:@"54"];
+    [[LionuDeviceInfoSDK shareInstance] initSDKWithHostUrl:@"https://testapi.digitalevers.com" APPID:@"50"];
 
     //配置SDK是否打印上报参数
     [LionuDeviceInfoSDK shareInstance].configModel.isLog = YES;
